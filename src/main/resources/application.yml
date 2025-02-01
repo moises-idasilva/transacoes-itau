@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: 'transacao-api-itau'
+
+#actuator: http://localhost:8080/actuator/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'health,metrics'
+    access:
+      default: none
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      access: read_only
